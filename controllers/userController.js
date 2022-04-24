@@ -7,9 +7,9 @@ class userController{
     static login=async(req,res)=>
      {
          let {mobile,id,name}=req.body
-         console.log(mobiles,id,name);
+        // console.log(mobiles,id,name);
         try {
-             let response=await registrationModel.find({name:name}) 
+             let response=await registrationModel.find({_id:id}) 
              const mobileNumber=response[0].mobile
              console.log(mobileNumber,mobile);
             
