@@ -11,7 +11,7 @@ class userController{
         try {
              let response=await registrationModel.find({_id:id}) 
              const mobileNumber=response[0].mobile
-             console.log(mobileNumber,mobile);
+            // console.log(mobileNumber,mobile);
             
              if(mobile===mobileNumber)
              {
